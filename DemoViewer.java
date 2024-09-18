@@ -28,8 +28,8 @@ public class DemoViewer {
 
         // panel to display render results
         JPanel renderPanel = new JPanel() {
-            @SuppressWarnings("unchecked")
 
+            @Override
             public void paintComponent(Graphics g) {
                 Graphics2D g2 = (Graphics2D) g;
                 g2.setColor(Color.BLACK);
@@ -38,7 +38,7 @@ public class DemoViewer {
                 // ---------------------------------------------------------------------------------------------------------------------------------- 
                 
                 // Create a list to store the triangles to make a tetrahedron
-                List triangles = new ArrayList<>();
+                List<Triangle> triangles = new ArrayList<>();
 
                 // we add the triangles in the list
                 triangles.add(new Triangle(new Point(100, 100, 100),
@@ -64,6 +64,7 @@ public class DemoViewer {
                 // we center the origin point (0, 0, 0)
                 g2.translate(getHeight(), getWidth());
                 g2.setColor(Color.WHITE);
+
                 // on instancie un objet qui nous permet de tracer des formes géométriques
                 for (Triangle t : triangles) {
                     Path2D path = new Path2D.Double();

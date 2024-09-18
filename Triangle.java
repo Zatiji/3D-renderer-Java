@@ -4,10 +4,10 @@ import java.awt.Color;
 
 public class Triangle {
     
-    private Point p1;
-    private Point p2;
-    private Point p3;
-    private Color color;
+    final private Point p1;
+    final private Point p2;
+    final private Point p3;
+    final private Color color;
 
     public Triangle (Point p1, Point p2, Point p3, Color color) {
         this.p1 = p1;

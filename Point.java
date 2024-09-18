@@ -3,9 +3,9 @@
 
 public class Point {
    
-    private double x;
-    private double y;
-    private double z;
+    final private double x;
+    final private double y;
+    final private double z;
 
     public Point (double x, double y, double z) {
         this.x = x;
