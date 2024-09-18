@@ -9,11 +9,29 @@ public class Triangle {
     private Point p3;
     private Color color;
 
-    Triangle (Point p1, Point p2, Point p3, Color color) {
+    public Triangle (Point p1, Point p2, Point p3, Color color) {
         this.p1 = p1;
         this.p2 = p2;
         this.p3 = p3;
         this.color = color;
 
+    }
+
+    // Class accessors
+    
+    public Point getP1 () {
+        return p1;
+    }
+
+    public Point getP2() {
+        return p2;
+    }
+
+    public Point getP3() {
+        return p3;
+    }
+
+    public Color getColor() {
+        return color;
     }
 }
